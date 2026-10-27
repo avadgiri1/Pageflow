@@ -1,0 +1,4 @@
+{"name":"pageflow","version":"1.0.0","private":true,
+"scripts":{"libs":"node copy-libs.js","sync":"npm run libs && npx cap sync android","android":"npm run sync && npx cap open android","apk":"npm run sync && cd android && ./gradlew assembleDebug"},
+"dependencies":{"@capacitor/android":"^6.1.0","@capacitor/core":"^6.1.0","pdfjs-dist":"3.11.174","mammoth":"1.6.0","jszip":"3.10.1","xlsx":"0.18.5"},
+"devDependencies":{"@capacitor/cli":"^6.1.0"}}
